@@ -1,9 +1,14 @@
 let obj = {
   key: [1, 2, 3, 4, 5]
 };
-
+let newArr = []
 function getOddElementsAtProperty(obj, key) {
-    // your code here
+  if (!obj[key] || !Array.isArray(obj[key]) || obj[key].length < 1) return []
+  else {
+  obj[key].map( e => e % 2 > 0 ? newArr.push(e) : null)
+  }
+
+ return newArr
 }
 
 let output = getOddElementsAtProperty(obj, 'key');

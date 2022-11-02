@@ -1,5 +1,6 @@
 // Write your function here
 function countAllCharacters(str){
+  
     if(str.length == 0){
         return {}
     }

@@ -7,3 +7,4 @@ function getNthElementOfProperty(obj, key, n){
 }
 
 ([1, 2], 'key', 1)
+
